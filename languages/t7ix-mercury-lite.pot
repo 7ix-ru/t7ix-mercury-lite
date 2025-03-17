@@ -1,0 +1,317 @@
+# Copyright (C) 2025 Design Studio 7ix
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: T7ix Mercury lite 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/t7ix-mercury-lite\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-03-09T13:45:14+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: t7ix-mercury-lite\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "T7ix Mercury lite"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://7ix.ru/themes/mercury-lite/"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "A modern, lightweight, and flexible WordPress theme built with full support for Gutenberg blocks. Mercury is designed for high performance and seamless customization, featuring built-in block patterns, advanced theme options, and optimized styles for a smooth user experience. Ideal for businesses, portfolios, and content-driven websites."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+#: patterns/footer.php:49
+msgid "Design Studio 7ix"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://7ix.ru"
+msgstr ""
+
+#: inc/classes/Filters.php:31
+msgid "Search..."
+msgstr ""
+
+#: patterns/404.php
+msgctxt "Pattern title"
+msgid "Page 404"
+msgstr ""
+
+#: patterns/404.php:17
+msgid "This page doesn’t exist."
+msgstr ""
+
+#: patterns/archive.php
+#: patterns/index.php
+msgctxt "Pattern title"
+msgid "List of posts, 3 columns"
+msgstr ""
+
+#: patterns/archive.php
+#: patterns/index.php
+#: patterns/search.php
+msgctxt "Pattern description"
+msgid "A list of posts, 3 column, with featured image, title, terms and post date."
+msgstr ""
+
+#: patterns/archive.php:10
+#: patterns/home.php:7
+#: patterns/index.php:10
+#: patterns/search.php:12
+msgid "Query loop"
+msgstr ""
+
+#: patterns/archive.php:26
+#: patterns/home.php:24
+#: patterns/index.php:27
+#: patterns/template-query-loop.php:30
+msgid "Sorry, but nothing was found. Please try a search with different keywords."
+msgstr ""
+
+#: patterns/footer.php
+msgctxt "Pattern title"
+msgid "Footer Section"
+msgstr ""
+
+#: patterns/footer.php
+msgctxt "Pattern description"
+msgid "A customizable footer section with multiple columns, social links, and copyright information."
+msgstr ""
+
+#: patterns/footer.php:31
+msgid "Privacy Policy"
+msgstr ""
+
+#: patterns/footer.php:34
+msgid "User agreement"
+msgstr ""
+
+#: patterns/footer.php:39
+msgid "%s © All Rights Reserved"
+msgstr ""
+
+#: patterns/footer.php:67
+msgid "Main"
+msgstr ""
+
+#: patterns/footer.php:71
+#: patterns/header.php:75
+msgid "About"
+msgstr ""
+
+#: patterns/footer.php:72
+#: patterns/header.php:76
+#: patterns/home.php:14
+#: patterns/index.php:17
+#: patterns/template-query-loop.php:19
+msgid "Blog"
+msgstr ""
+
+#: patterns/footer.php:73
+#: patterns/header.php:78
+msgid "FAQ"
+msgstr ""
+
+#: patterns/footer.php:74
+#: patterns/header.php:77
+msgid "Contacts"
+msgstr ""
+
+#: patterns/footer.php:75
+#: patterns/header.php:79
+msgid "Information"
+msgstr ""
+
+#: patterns/footer.php:76
+msgid "Our Services"
+msgstr ""
+
+#: patterns/footer.php:77
+msgid "Terms & Condition"
+msgstr ""
+
+#: patterns/footer.php:84
+msgid "Links"
+msgstr ""
+
+#: patterns/footer.php:88
+#: patterns/header.php:81
+msgid "Shop"
+msgstr ""
+
+#: patterns/footer.php:89
+msgid "Wishlist"
+msgstr ""
+
+#: patterns/footer.php:90
+msgid "My Account"
+msgstr ""
+
+#: patterns/footer.php:91
+msgid "Order History"
+msgstr ""
+
+#: patterns/footer.php:92
+msgid "Order Tracking"
+msgstr ""
+
+#: patterns/footer.php:93
+msgid "Services Center"
+msgstr ""
+
+#: patterns/footer.php:141
+msgid "48 Broadway St"
+msgstr ""
+
+#: patterns/footer.php:144
+msgid "NY 260683"
+msgstr ""
+
+#: patterns/header.php
+msgctxt "Pattern title"
+msgid "Header"
+msgstr ""
+
+#: patterns/header.php
+msgctxt "Pattern description"
+msgid "Header with site logo and navigation."
+msgstr ""
+
+#: patterns/header.php:27
+msgid "Thomsburg"
+msgstr ""
+
+#: patterns/header.php:80
+msgid "Services"
+msgstr ""
+
+#: patterns/home.php
+msgctxt "Pattern title"
+msgid "Page home"
+msgstr ""
+
+#: patterns/search.php
+msgctxt "Pattern title"
+msgid "Search list of posts, 3 columns"
+msgstr ""
+
+#: patterns/search.php:27
+msgid "Sorry, but nothing was found. Please try to search with other keywords."
+msgstr ""
+
+#: patterns/single.php
+msgctxt "Pattern title"
+msgid "Page single"
+msgstr ""
+
+#: patterns/single.php
+msgctxt "Pattern description"
+msgid "Page of a separate entry with the heading, image, contents, meta-dane, navigation and comments."
+msgstr ""
+
+#: patterns/single.php:19
+msgid "Written"
+msgstr ""
+
+#: patterns/single.php:23
+msgid "in"
+msgstr ""
+
+#: patterns/single.php:37
+msgid "Navigation by records"
+msgstr ""
+
+#: patterns/single.php:47
+msgid "Comments"
+msgstr ""
+
+#: patterns/single.php:86
+msgid "More records"
+msgstr ""
+
+#: patterns/template-query-loop.php
+msgctxt "Pattern title"
+msgid "Query loop"
+msgstr ""
+
+#: patterns/template-query-loop.php
+msgctxt "Pattern description"
+msgid "List of posts in the form of a grid is one large, two small."
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "White"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Light grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Black"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Accent"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Additional"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Grey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Error"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Success"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Line"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr ""
