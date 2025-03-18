@@ -67,10 +67,14 @@
 			"text": true
 		},
 		"layout": {
-			"wideSize": "800px",
+			"wideSize": "1180px",
 			"contentSize": "1180px"
 		},
-		"useRootPaddingAwareAlignments": false
+		"useRootPaddingAwareAlignments": false,
+		"spacing": {
+			"padding": true,
+			"units": [ "px", "em", "rem", "%" ]
+		}
 	},
 	"styles": {
 		"blocks": {},

@@ -22,6 +22,7 @@ if ( ! class_exists( 'T7ix\Mercury\Setup' ) ) {
 			add_action('after_setup_theme',             [$this, 'setup_theme']);
 			add_action('wp_enqueue_scripts',            [$this, 'enqueue_scripts']);
 			add_action('admin_enqueue_scripts',         [$this, 'admin_enqueue_scripts']);
+			add_action('init',                          [$this, 'register_block_pattern_category']);
 			$this->bundles();
 		}
 
@@ -80,8 +81,11 @@ if ( ! class_exists( 'T7ix\Mercury\Setup' ) ) {
 			) {
 				$css_style = Check::fun_is_file('/assets/css/style.css');
 				if ($css_style) {
-					wp_enqueue_style('t7ix-mercury-lite-style', T7IX_THEME_URI.$css_style,
-						[], T7IX_THEME_VERSION);
+					wp_enqueue_style('t7ix-mercury-lite-style',
+                        T7IX_THEME_URI . $css_style,
+						[],
+                        T7IX_THEME_VERSION
+                    );
 				}
 
                 wp_enqueue_style(
@@ -93,8 +97,12 @@ if ( ! class_exists( 'T7ix\Mercury\Setup' ) ) {
 
 				$js_main = Check::fun_is_file('/assets/js/main.js');
 				if ($js_main) {
-					wp_enqueue_script('t7ix-mercury-lite-main', T7IX_THEME_URI.$js_main,
-						['jquery'], T7IX_THEME_VERSION, true);
+					wp_enqueue_script('t7ix-mercury-lite-main',
+                        T7IX_THEME_URI . $js_main,
+						['jquery'],
+                        T7IX_THEME_VERSION,
+                        true
+                    );
 				}
 			}
 
@@ -118,12 +126,29 @@ if ( ! class_exists( 'T7ix\Mercury\Setup' ) ) {
 			) {
 				$css_admin = Check::fun_is_file( '/admin/css/style.css' );
 				if ( $css_admin ) {
-					wp_enqueue_style( 't7ix-mercury-lite-admin', T7IX_THEME_URI . $css_admin, [], filemtime( T7IX_THEME_DIR . $css_admin ) );
+					wp_enqueue_style( 't7ix-mercury-lite-admin',
+                        T7IX_THEME_URI . $css_admin,
+                        [],
+                        T7IX_THEME_VERSION
+                    );
 				}
 
 				$this->enqueue_scripts();
 			}
 		}
+
+        /**
+         * @return void
+         */
+        public function register_block_pattern_category(): void
+        {
+            register_block_pattern_category(
+                't7ix-mercury-lite',
+                [
+                    'label' => esc_html__( 'T7ix Mercury Lite', 't7ix-mercury-lite' ),
+                ]
+            );
+        }
 		
 	}
 }

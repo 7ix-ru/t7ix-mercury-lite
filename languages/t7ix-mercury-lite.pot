@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: T7ix Mercury lite 1.0.0\n"
+"Project-Id-Version: T7ix Mercury lite 1.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/t7ix-mercury-lite\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-03-09T13:45:14+00:00\n"
+"POT-Creation-Date: 2025-03-18T09:59:12+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: t7ix-mercury-lite\n"
@@ -44,12 +44,20 @@ msgstr ""
 msgid "Search..."
 msgstr ""
 
+#: inc/classes/Setup.php:148
+msgid "T7ix Mercury Lite"
+msgstr ""
+
 #: patterns/404.php
 msgctxt "Pattern title"
 msgid "Page 404"
 msgstr ""
 
-#: patterns/404.php:17
+#: patterns/404.php:15
+msgid "404"
+msgstr ""
+
+#: patterns/404.php:19
 msgid "This page doesn’t exist."
 msgstr ""
 
@@ -80,6 +88,43 @@ msgstr ""
 msgid "Sorry, but nothing was found. Please try a search with different keywords."
 msgstr ""
 
+#: patterns/cta-info-cover.php
+msgctxt "Pattern title"
+msgid "CTA Info Cover"
+msgstr ""
+
+#: patterns/cta-info-cover.php:9
+msgid "CTA Info Cover"
+msgstr ""
+
+#: patterns/cta-info-cover.php:14
+#: patterns/cta-info-default.php:14
+msgid "What DNA kit Should You choose?"
+msgstr ""
+
+#: patterns/cta-info-cover.php:17
+#: patterns/cta-info-default.php:17
+msgid "Answer 3 questions and we will give you<br>recommendations for genetic research"
+msgstr ""
+
+#: patterns/cta-info-cover.php:22
+#: patterns/cta-info-default.php:22
+msgid "Pick a test"
+msgstr ""
+
+#: patterns/cta-info-cover.php:25
+msgid "One page"
+msgstr ""
+
+#: patterns/cta-info-default.php
+msgctxt "Pattern title"
+msgid "CTA Info default"
+msgstr ""
+
+#: patterns/cta-info-default.php:9
+msgid "CTA Info default"
+msgstr ""
+
 #: patterns/footer.php
 msgctxt "Pattern title"
 msgid "Footer Section"
@@ -90,15 +135,16 @@ msgctxt "Pattern description"
 msgid "A customizable footer section with multiple columns, social links, and copyright information."
 msgstr ""
 
-#: patterns/footer.php:31
+#: patterns/footer.php:32
 msgid "Privacy Policy"
 msgstr ""
 
-#: patterns/footer.php:34
+#: patterns/footer.php:35
 msgid "User agreement"
 msgstr ""
 
-#: patterns/footer.php:39
+#. translators: %s - The current year
+#: patterns/footer.php:42
 msgid "%s © All Rights Reserved"
 msgstr ""
 
@@ -169,6 +215,15 @@ msgstr ""
 
 #: patterns/footer.php:93
 msgid "Services Center"
+msgstr ""
+
+#: patterns/footer.php:111
+#: patterns/header.php:52
+msgid "+0 (000) 000-0000"
+msgstr ""
+
+#: patterns/footer.php:132
+msgid "Theme.Mercury@7ix.ru"
 msgstr ""
 
 #: patterns/footer.php:141

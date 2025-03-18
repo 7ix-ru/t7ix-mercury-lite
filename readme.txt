@@ -4,7 +4,7 @@ Tags: blog, portfolio, news
 Requires at least: 6.4
 Tested up to: 6.7
 Requires PHP: 8.2
-Stable tag: 1.0.4
+Stable tag: 1.1.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: t7ix-mercury-lite
@@ -40,10 +40,20 @@ License URL: https://creativecommons.org/publicdomain/zero/1.0/
 Theme Logo (Design Studio 7ix, PNG format)
 The logo included in this theme is a trademark of Design Studio 7ix and may not be used separately from this theme without permission.
 
+=== Screenshot Image ===
+Image used in the screenshot banner.
+Source: https://commons.wikimedia.org/wiki/File:DNA_double_helix_structure.webp
+License: CC0 - Public Domain
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+
 For full license details, please visit:
 https://7ix.ru/themes/mercury-lite/
 
 == Changelog ==
+
+= 1.1.0 =
+* Refactoring php all functions
+* Add pattern and category patterns
 
 = 1.0.4 =
 * Fixed CSS

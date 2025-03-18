@@ -7,6 +7,7 @@
  * Description: A customizable footer section with multiple columns, social links, and copyright information.
  * Keywords: footer, columns, navigation, social
  */
+namespace T7ix\Mercury;
 ?>
 <!-- wp:column {"className":"footer","style":{"elements":{"link":{"color":{"text":"var:preset|color|additional"}}}},"textColor":"additional"} -->
 <div class="wp-block-column footer has-additional-color has-text-color has-link-color">
@@ -19,7 +20,7 @@
                 <!-- wp:image {"lightbox":{"enabled":false},"width":"100px","height":"109px","scale":"cover","sizeSlug":"full","linkDestination":"custom"} -->
                 <figure class="wp-block-image size-full is-resized">
                     <a href="#">
-                        <img src="<?php echo T7IX_THEME_URI ?>/assets/img/logo-footer.png" alt="" style="object-fit:cover;width:100px;height:109px"/>
+                        <img src="<?php echo App::file_uri('/assets/img/logo-footer.png') ?>" alt="" style="object-fit:cover;width:100px;height:109px"/>
                     </a>
                 </figure>
                 <!-- /wp:image -->
@@ -36,18 +37,17 @@
 				<!-- wp:group {"className":"copyright"} -->
 				<div class="wp-block-group copyright">
                     <!-- wp:paragraph -->
-                    <p><?php esc_html_e(sprintf(__('%s © All Rights Reserved', 't7ix-mercury-lite'), date
-                        ('Y'))) ?></p>
+                    <p><?php
+                        /* translators: %s - The current year */
+                        printf(esc_html__('%s © All Rights Reserved', 't7ix-mercury-lite'), date('Y'));
+                        ?></p>
 					<!-- /wp:paragraph -->
                     <!-- wp:paragraph -->
-					<p><?php printf(
-							wp_kses(
-								'<a href="%s" target="_blank">%s</a>',
-								['a' => ['href' => [], 'target' => []]]
-							),
-							esc_url('https://7ix.ru/themes/mercury-lite/'),
-							esc_html__('Design Studio 7ix', 't7ix-mercury-lite')
-						) ?></p>
+                    <p><?php printf(wp_kses(sprintf(
+                                '<a href="%s" target="_blank">%s</a>',
+                                esc_url('https://7ix.ru/themes/mercury-lite/'),
+                                esc_html__('Design Studio 7ix', 't7ix-mercury-lite')
+                        ), ['a' => ['href' => [], 'target' => []]])) ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->

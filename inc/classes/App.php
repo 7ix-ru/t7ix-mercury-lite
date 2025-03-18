@@ -56,5 +56,16 @@ if ( ! class_exists( 'T7ix\Mercury\App' ) ) {
             return $cleaned;
         }
 
+        /**
+         * @param $file
+         *
+         * @see get_theme_file_uri
+         *
+         * @return string
+         */
+        public static function file_uri($file): string
+        {
+            return esc_url(get_theme_file_uri(ltrim($file, '/')));
+        }
     }
 }
