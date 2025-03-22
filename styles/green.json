@@ -1,0 +1,91 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Green",
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"defaultGradients": false,
+			"defaultPalette": false,
+			"gradients": [
+				{
+					"gradient": "radial-gradient(rgb(124,200,28) 0%,rgb(211,255,158) 100%)",
+					"name": "Gradient 1",
+					"slug": "gradient-1"
+				},
+				{
+					"gradient": "radial-gradient(rgb(124,200,28) 0%,rgba(196,196,196,0) 100%)",
+					"name": "Gradient 2",
+					"slug": "gradient-2"
+				},
+				{
+					"gradient": "linear-gradient(128deg,rgb(31,31,31) 0%,rgb(124,200,28) 100%)",
+					"name": "Gradient 3",
+					"slug": "gradient-3"
+				},
+				{
+					"gradient": "radial-gradient(rgb(124,200,28) 0%,rgb(179,247,96) 100%)",
+					"name": "Gradient 4",
+					"slug": "gradient-4"
+				}
+			],
+			"palette": [
+				{
+					"color": "#ffffff",
+					"name": "White",
+					"slug": "white"
+				},
+				{
+					"color": "#000000",
+					"name": "Dark",
+					"slug": "dark"
+				},
+				{
+					"color": "#6a6a6a",
+					"name": "Dark grey",
+					"slug": "dark-grey"
+				},
+				{
+					"color": "#f3f3f3",
+					"name": "Light grey",
+					"slug": "light-grey"
+				},
+				{
+					"color": "#1f1f1f",
+					"name": "Black",
+					"slug": "black"
+				},
+				{
+					"color": "#7cc81c",
+					"name": "Accent",
+					"slug": "accent"
+				},
+				{
+					"color": "#d3ff9e",
+					"name": "Additional",
+					"slug": "additional"
+				},
+				{
+					"color": "#c5c5c5",
+					"name": "Grey",
+					"slug": "grey"
+				},
+				{
+					"color": "#f21d1d",
+					"name": "Error",
+					"slug": "error"
+				},
+				{
+					"color": "#f7fec9",
+					"name": "Success",
+					"slug": "success"
+				},
+				{
+					"color": "#e5e5e5",
+					"name": "Line",
+					"slug": "line"
+				}
+			]
+		}
+	}
+}

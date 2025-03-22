@@ -22,9 +22,9 @@ if ( ! class_exists( 'T7ix\Mercury\Check' ) ) {
          * files are present before attempting to use them.
          *
          * @param string $filename The relative path to the file within the theme directory.
-         * @return string|false Returns the filename if it exists and is readable, otherwise false.
+         * @return string Returns the filename if it exists and is readable, otherwise false.
          */
-        public static function fun_is_file(string $filename ): false|string
+        public static function fun_is_file(string $filename ): string
         {
             if ( is_readable( T7IX_THEME_DIR . $filename ) ) {
                 return $filename;
@@ -58,8 +58,10 @@ if ( ! class_exists( 'T7ix\Mercury\Check' ) ) {
         {
             return in_array(
                 'woocommerce/woocommerce.php',
-                (array) get_option('active_plugins', []) +
-                (is_multisite() ? (array) get_site_option('active_sitewide_plugins', []) : [])
+                array_merge(
+                    (array) get_option('active_plugins', []),
+                    is_multisite() ? (array) get_site_option('active_sitewide_plugins', []) : []
+                )
             );
         }
     }

@@ -12,7 +12,8 @@ if (!defined('T7IX_THEME_DIR')) {
 if ( ! class_exists( 'T7ix\Mercury\Setup' ) ) {
 	class Setup {
 
-		private static ?Setup $instance = null;
+        /** @var Setup|null */
+        private static $instance = null;
 
 		private function __construct() {}
 		private function __clone() {}
@@ -27,7 +28,10 @@ if ( ! class_exists( 'T7ix\Mercury\Setup' ) ) {
 		}
 
 
-		public static function instance(): Setup
+        /**
+         * @return Setup
+         */
+		public static function instance()
 		{
 			if (self::$instance === null) {
 				self::$instance = new self();
@@ -38,11 +42,9 @@ if ( ! class_exists( 'T7ix\Mercury\Setup' ) ) {
 		}
 
 		/**
-		 *
 		 * @return void
-		 *
 		 */
-		private function bundles(): void
+		private function bundles()
 		{
 
 			if (class_exists('T7ix\Mercury\Check')) {
@@ -56,11 +58,9 @@ if ( ! class_exists( 'T7ix\Mercury\Setup' ) ) {
 		}
 
 		/**
-		 *
 		 * @return void
-		 *
 		 */
-		public function setup_theme(): void
+		public function setup_theme()
 		{
 			load_theme_textdomain( 't7ix-mercury-lite', T7IX_THEME_DIR . '/languages' );
 
@@ -71,11 +71,9 @@ if ( ! class_exists( 'T7ix\Mercury\Setup' ) ) {
 		}
 
         /**
-		 *
 		 * @return void
-		 *
 		 */
-		public function enqueue_scripts(): void
+		public function enqueue_scripts()
 		{
 			if (is_callable(['T7ix\Mercury\Check', 'fun_is_file'])
 			) {
@@ -87,13 +85,6 @@ if ( ! class_exists( 'T7ix\Mercury\Setup' ) ) {
                         T7IX_THEME_VERSION
                     );
 				}
-
-                wp_enqueue_style(
-                    't7ix-mercury-lite-google-fonts',
-                    'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap',
-                    ['t7ix-mercury-lite-style'],
-                    T7IX_THEME_VERSION
-                );
 
 				$js_main = Check::fun_is_file('/assets/js/main.js');
 				if ($js_main) {
@@ -116,11 +107,9 @@ if ( ! class_exists( 'T7ix\Mercury\Setup' ) ) {
 		}
 
 		/**
-		 *
 		 * @return void
-		 *
 		 */
-		public function admin_enqueue_scripts(): void
+		public function admin_enqueue_scripts()
 		{
 			if (is_callable(['T7ix\Mercury\Check', 'fun_is_file'])
 			) {
@@ -140,7 +129,7 @@ if ( ! class_exists( 'T7ix\Mercury\Setup' ) ) {
         /**
          * @return void
          */
-        public function register_block_pattern_category(): void
+        public function register_block_pattern_category()
         {
             register_block_pattern_category(
                 't7ix-mercury-lite',

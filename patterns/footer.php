@@ -9,8 +9,8 @@
  */
 namespace T7ix\Mercury;
 ?>
-<!-- wp:column {"className":"footer","style":{"elements":{"link":{"color":{"text":"var:preset|color|additional"}}}},"textColor":"additional"} -->
-<div class="wp-block-column footer has-additional-color has-text-color has-link-color">
+<!-- wp:column {"className":"footer","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"},":hover":{"color":{"text":"var:preset|color|additional"}}}}},"backgroundColor":"accent","textColor":"white"} -->
+<div class="wp-block-column footer has-white-color has-accent-background-color has-text-color has-background has-link-color">
 	<!-- wp:column {"className":"footer__wrapper"} -->
 	<div class="wp-block-column footer__wrapper">
 		<!-- wp:column {"className":"footer__item"} -->

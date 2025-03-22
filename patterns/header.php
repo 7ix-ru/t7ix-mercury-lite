@@ -19,7 +19,7 @@ namespace T7ix\Mercury;
             <div class="wp-block-group address">
                 <!-- wp:image -->
                 <figure class="wp-block-image">
-                    <img src="<?php echo App::file_uri('/assets/img/svg/ico-location.svg') ?>" alt="search" />
+                    <img src="<?php echo App::file_uri('/assets/img/svg/ico-location.svg') ?>?v=2" alt="search" />
                 </figure>
                 <!-- /wp:image -->
                 <!-- wp:paragraph {"className":"button-text"} -->
@@ -48,7 +48,7 @@ namespace T7ix\Mercury;
                     <!-- wp:button {"className":"top-header-phone"} -->
                     <div class="wp-block-button top-header-phone">
                         <a class="wp-block-button__link wp-element-button" href="tel:<?php echo esc_attr('+00000000000') ?>">
-                            <img src="<?php echo App::file_uri('/assets/img/svg/ico-phone.svg') ?>" alt="phone">
+                            <img src="<?php echo App::file_uri('/assets/img/svg/ico-phone.svg') ?>?v=2" alt="phone">
                             <?php esc_html_e('+0 (000) 000-0000', 't7ix-mercury-lite') ?>
                         </a>
                     </div>

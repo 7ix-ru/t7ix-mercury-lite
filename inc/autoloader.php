@@ -1,6 +1,6 @@
 <?php
 if ( ! function_exists( 't7ix_mercury_autoload' ) ) {
-	function t7ix_mercury_autoload($class): void
+	function t7ix_mercury_autoload($class)
 	{
 		$prefix   = 'T7ix\\Mercury\\';
 		$base_dir = __DIR__ . '/classes/';

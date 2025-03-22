@@ -1,10 +1,11 @@
-=== T7ix Mercury Lite ===
+=== T7ix Mercury lite ===
 Contributors: ketovpavel
 Tags: blog, portfolio, news
 Requires at least: 6.4
 Tested up to: 6.7
-Requires PHP: 8.2
-Stable tag: 1.1.0
+Requires PHP: 7.4
+Stable tag: 1.3.96
+Version: 1.3.96
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: t7ix-mercury-lite
@@ -40,20 +41,72 @@ License URL: https://creativecommons.org/publicdomain/zero/1.0/
 Theme Logo (Design Studio 7ix, PNG format)
 The logo included in this theme is a trademark of Design Studio 7ix and may not be used separately from this theme without permission.
 
-=== Screenshot Image ===
-Image used in the screenshot banner.
-Source: https://commons.wikimedia.org/wiki/File:DNA_double_helix_structure.webp
-License: CC0 - Public Domain
-License URL: https://creativecommons.org/publicdomain/zero/1.0/
-
 For full license details, please visit:
 https://7ix.ru/themes/mercury-lite/
 
 == Changelog ==
 
-= 1.1.0 =
-* Refactoring php all functions
-* Add pattern and category patterns
+= 1.3.96 =
+* Fixed palette Gradient
+
+= 1.3.95 =
+* Added palette Green lite, Purple, Red
+
+= 1.3.94 =
+* Fixed palette Green
+
+= 1.3.93 =
+* Refactored palette Green
+
+= 1.3.92 =
+* Fixed SVG Icons
+
+= 1.3.91 =
+* Fixed SVG Icons color
+
+= 1.3.9 =
+* Fixed CSS
+
+= 1.3.9 =
+* Fixed CSS
+
+= 1.3.7 =
+* Fixed admin CSS
+
+= 1.3.6 =
+* Fixed CSS
+* Overlooking variables colors
+
+= 1.3.5 =
+* Fixed CSS
+
+= 1.3.4 =
+* Fixed CSS
+
+= 1.3.3 =
+* Fixed CSS
+
+= 1.3.2 =
+* Fixed CSS
+
+= 1.3.1 =
+* Fixed CSS
+
+= 1.3.0 =
+* Fixed CSS
+* Refactored default styles
+* Added palette Green
+
+= 1.2.2 =
+* Fixed CSS
+
+= 1.2.1 =
+* Fixed taxonomy and category CSS
+
+= 1.2.0 =
+* Ensured compatibility with PHP 7.4 by adjusting class properties and type hints.
+* Refactored PHP functions for better performance and readability.
+* Added a new blocks patterns and registered a pattern category.
 
 = 1.0.4 =
 * Fixed CSS

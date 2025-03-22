@@ -12,9 +12,7 @@ if (!defined('T7IX_THEME_DIR') || !defined('T7IX_THEME_URI')) {
 if ( ! class_exists( 'T7ix\Mercury\App' ) ) {
     class App
     {
-
         /**
-         *
          *
          * @see trim_string
          *
@@ -38,18 +36,16 @@ if ( ! class_exists( 'T7ix\Mercury\App' ) ) {
          * Convert phone number to format +00000000000 или 00000000000
          *
          * @param $phone
-         * @param  bool  $with_plus
-         *
-         * @return array|string|string[]|null
-         *
+         * @param bool $with_plus
+         * @return string
          */
-        public static function format_phone_number( $phone, bool $with_plus = true ): array|string|null
+        public static function format_phone_number( $phone, bool $with_plus = true ): string
         {
             $cleaned = preg_replace( '/\D/', '', $phone ) ?? '';
             if ( $with_plus && !empty( $cleaned ) ) {
-                if (str_contains($phone, '+')) {
+                if (strpos($phone, '+') !== false) {
                     $cleaned = '+' . $cleaned;
-                } else if ( strlen( $cleaned ) > 10 ) {
+                } elseif (strlen($cleaned) > 10) {
                     $cleaned = '+' . $cleaned;
                 }
             }

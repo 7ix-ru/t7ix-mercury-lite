@@ -18,11 +18,13 @@ if ( ! class_exists( 'T7ix\Mercury\Filters' ) ) {
         }
 
         /**
-         * @param $block_content
-         * @param $block
-         * @return false|mixed|string
+         * Replace the core search block with a custom search form.
+         *
+         * @param string $block_content The content of the block.
+         * @param array $block         The block data.
+         * @return string The modified block content.
          */
-        public function replace_search_block( $block_content, $block ): mixed
+        public function replace_search_block(string $block_content, array $block ): string
         {
             if ( 'core/search' === $block['blockName'] && !empty($block['attrs']) && 'header-search' === $block['attrs']['label']) {
                 ob_start();
